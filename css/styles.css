@@ -3,6 +3,7 @@
 	--secondary-text-color: #2e2f42;
 	--background-color: #ffffff;
 	--background-color-employee: #f4f4fd;
+	--background-color-features: #f4f4fd;
 	--border-color: #f4f4fd;
 	--hero-tex-color: #ffffff;
 	--hero-background-color: #2e2f42;
@@ -115,6 +116,12 @@ button {
 	color: var(--secondary-text-color);
 	line-height: 1.5;
 }
+.contacts-box {
+	display: flex;
+	/* justify-content: flex-start; */
+	align-items: center;
+	gap: 24px;
+}
 
 .logo {
 	font-family: Raleway, sans-serif;
@@ -138,11 +145,21 @@ button {
 
 /* ---------------------------hero------------------------ */
 .hero {
+	background-color: var(--hero-background-color);
+}
+.hero-box {
 	padding-top: 192px;
 	padding-bottom: 192px;
 	text-align: center;
-
-	background-color: var(--hero-background-color);
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url(../images/people-office\ 1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero-title {
@@ -180,6 +197,7 @@ button {
 .button:focus {
 	color: var(--buttons-active-text-color);
 	background-color: var(--buttons-active-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn {
 	padding: 16px 32px;
@@ -213,6 +231,16 @@ button {
 .features-list {
 	display: flex;
 	gap: 24px;
+}
+.box {
+	width: 264px;
+	height: 112px;
+	background: var(--background-color-features);
+	border-radius: 4px;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .text {
@@ -268,8 +296,67 @@ button {
 	text-align: center;
 }
 .employee-text {
+	margin-bottom: 8px;
 	text-align: center;
 }
+.employee-link {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+.link-icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #4d5ae5;
+}
+.link-icon:focus,
+.link-icon:hover {
+	background: #31d0aa;
+}
+
+/* ------------------Customers---------------------------- */
+.customers-conteainer {
+	display: block;
+}
+.customers-list {
+	display: flex;
+	gap: 24px;
+}
+.customers-title {
+	margin-bottom: 72px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.customers-box {
+	width: 168px;
+	height: 88px;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box-icon {
+	fill: #8e8f99;
+}
+.customers-box:hover,
+.customers-box:focus {
+	border: 1px solid #4d5ae5;
+}
+
+.box-icon:hover,
+.box-icon:focus {
+	fill: #4d5ae5;
+}
+
 /* ------------------portfolio---------------------------- */
 .portfolio-conteainer {
 	padding: 0 15px;
@@ -286,7 +373,8 @@ button {
 	flex-wrap: wrap;
 	gap: 48px 24px;
 }
-.portfolio-div {
+
+.portfolio-div:hover {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -306,6 +394,10 @@ button {
 
 	background-color: var(--footer-background-color);
 }
+.footer-conteainer {
+	display: flex;
+	gap: 120px;
+}
 .footer-logo {
 	display: flex;
 	margin-bottom: 16px;
@@ -314,4 +406,12 @@ button {
 .footer-text {
 	width: 264px;
 	color: var(--footer-text-color);
+}
+.footer-title {
+	margin-bottom: 16px;
+	font-weight: 500;
+	color: var(--footer-text-color);
+}
+.footer-icon {
+	background: rgba(255, 255, 255, 0.1);
 }
