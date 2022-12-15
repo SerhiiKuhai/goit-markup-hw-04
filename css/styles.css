@@ -348,10 +348,10 @@ button {
 	color: #4d5ae5;
 }
 
-.box-icon:hover,
+/* .box-icon:hover,
 .box-icon:focus {
 	fill: #4d5ae5;
-}
+} */
 
 /* ------------------portfolio---------------------------- */
 .portfolio-conteainer {
@@ -369,13 +369,16 @@ button {
 	flex-wrap: wrap;
 	gap: 48px 24px;
 }
+.portfolio-box {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .portfolio-div {
 	display: block;
 	text-decoration: none;
 	color: var(--secondary-text-color);
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.portfolio-div:hover {
+.portfolio-div:hover,
+.portfolio-div:focus {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -397,6 +400,7 @@ button {
 }
 .footer-conteainer {
 	display: flex;
+	align-items: baseline;
 }
 .div-footer-logo {
 	margin-right: 120px;
